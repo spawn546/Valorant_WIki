@@ -1,0 +1,341 @@
+
+
+/* ### DEFAULT CONFIGS ### */
+
+hr{
+	border: 2px solid #EE3056;
+}
+
+
+
+
+
+:root {
+	font-size: 16px;
+	font-family: 'Open Sans';
+	--text-primary: white;
+	--text-secondary: #101823;
+	--bg-primary: #FF4655;
+	--bg-secondary: #101823;
+}
+
+body {
+	color: black;
+	background-color: #030C19;
+	margin: 0;
+	padding: 0;
+
+}
+
+body::-webkit-scrollbar{
+	width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track{
+	background: #1e1e24;
+}
+body::-webkit-scrollbar-thumb{
+	background:#6648b8;
+}
+
+
+
+
+main {
+	margin-left: 5rem;
+	padding: 1rem;
+}
+
+/* ### MENU ### */
+
+
+
+.logo {
+	margin-top: 4px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 1rem;
+	text-align: center;
+	color:var(--text-secondary);
+	background: var(--bg-secondary);
+	letter-spacing: 0.3ch;
+
+
+}
+
+
+.logo svg {
+	transform: rotate(0deg);
+	transition: transform 0.4s;
+
+}
+
+.navbar:hover .logo svg {
+	transform: rotate(-180deg);
+
+}
+
+
+
+
+.navbar {
+	
+	position: fixed;
+	background-color: var(--bg-primary);
+	transition: width 200ms ease;
+
+}
+
+.navbar-nav{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+
+}
+
+
+.nav-item{
+	width: 100%;
+}
+
+
+.nav-item:last-child {
+
+	margin-top: auto;
+}
+
+.nav-link {
+
+	display: flex;
+	align-items: center;
+	height: 5rem;
+	color: var(--text-primary);
+	text-decoration: none;
+	filter: grayscale(100%) opacity(0.7);
+	transition: 0.4;
+}
+
+.nav-link:hover {
+
+	filter: grayscale(0) opacity(1);
+	color: black;
+}
+
+.nav-link svg {
+
+	min-width: 2rem;
+	margin: 0 1.5rem;
+	
+}
+
+
+
+.link-text {
+
+	display: none;
+	margin-left: 1rem;
+}
+/* ### FIM MENU ### */
+
+
+
+
+
+
+/* ### Main Conteudo ### */
+
+
+#container{
+
+	border-radius: 4px;
+	width: 80%;
+	height:100%;
+	background-color: #ECE8E2;
+	margin: 10px auto;
+	max-width: 1000px;
+	min-width: 400px;
+
+}
+
+.conteudo{
+	
+	margin-top: 10px;
+	text-align: center;
+	width: 100%;
+	height: 50%;
+
+ 	
+	
+}
+
+.conteudo h3{
+	padding: 7px;
+	margin: 50 10 10 50;
+ 	text-transform: uppercase;
+ 	font-size: 1.2em;
+ 	text-decoration: overline;
+}	
+
+
+.conteudo p{
+	margin-bottom: 0;
+	margin-top: 5px;
+	padding: 1px;
+	font-size: 0.9em;
+	letter-spacing: 0.3ch;
+	
+
+
+}
+
+.conteudo h4{
+	padding: 10px;
+ 	text-transform: uppercase;
+ 	font-size: 1em;
+ 	text-decoration: underline;
+}	
+
+
+.conteudo img{
+	
+	margin-bottom:20px;
+}
+
+.conteudo a:hover{
+	opacity: 0.7;
+
+	transition: 1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ### MEDIA QUERIES ### */
+
+/*small screens */
+
+@media only screen and (max-width: 600px) {
+
+ .navbar{
+ 	bottom: 0;
+ 	width: 100vw;
+ 	height: 5rem;
+ }
+ .logo{
+ 	display: none;
+ }
+
+.navbar-nav{
+	flex-direction:row;
+}
+
+.nav-link{
+	justify-content: center;
+}
+
+main{
+	margin: 0;
+}
+
+
+
+
+}
+
+/*large screens */
+
+
+
+@media only screen and (min-width:600px){
+.navbar{
+	top: 0;
+	width: 5rem;
+	height: 100vh;
+	}
+	
+	.navbar:hover{
+		width: 16rem;
+	}
+
+
+	.navbar:hover .link-text{
+		display: inline;
+		transition: opacity 0.4s;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SVG /*
+
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+.svg-icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #4691f6;
+}
+
+.svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}
+
